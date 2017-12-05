@@ -6,10 +6,9 @@ This repository contains short code examples on how to use NetApp StorageGRID We
 * S3 via Python (using Boto 3)
 * S3 via Ruby (using AWS SDK for Ruby Version 2)
 * Swift via Python (using phyton-swiftclient)
-* More examples will follow
 
 ## Compatibility
-All shown examples are compatible with StorageGRID Webscale 10.3 (GA Release). For older versions, please switch to the different branches.
+All shown examples are compatible with StorageGRID Webscale 11.0 (GA Release). For older versions, please switch to the different branches.
 
 ```
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
