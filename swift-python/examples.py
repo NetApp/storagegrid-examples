@@ -1,6 +1,6 @@
 import swiftclient
 
-username = '57347988074919328399:swiftadmin'
+username = '38774727888584148627:swiftadmin'
 password = 'supersecret'
 authurl = 'https://swift.mycompany.com:8083/auth/v1.0'
 
