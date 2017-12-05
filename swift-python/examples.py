@@ -1,3 +1,5 @@
+# See README.md for more examples
+
 import swiftclient
 
 username = '38774727888584148627:swiftadmin'

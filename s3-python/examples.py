@@ -1,3 +1,5 @@
+# See README.md for more examples
+
 import boto3
 import boto3.session
 
