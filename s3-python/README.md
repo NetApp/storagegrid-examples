@@ -72,12 +72,25 @@ s3.BucketPolicy('my-bucket').delete()
 
 ## Object Operations
 
-Put a new object to a bucket
+Put a new object to a bucket:
+```python
+s3.Object('my-bucket', 'object_name.txt').put(
+          Body='This is my object\'s data')
+```
+
+Put a new object with metadata and server side encryption:
 ```python
 s3.Object('my-bucket', 'object_name.txt').put(
           Body='This is my object\'s data',
           Metadata={'customerid': '1234', 'location': 'germany'},
           ServerSideEncryption='AES256')
+```
+
+Put a new object with object tags:
+```python
+s3.Object('my-bucket', 'object_name.txt').put(
+          Body='This is my object\'s data',
+          Tagging='customerid=1234&location=germany')
 ```
 
 Delete an object:
