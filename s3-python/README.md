@@ -148,6 +148,18 @@ metadata = response['Metadata']
 print("Data: %s // Metadata: %s" % (data, metadata))
 ```
 
+Perform a byte-range read:
+```python
+# Read first 4 bytes of an object
+response = s3.Object('metadata-bucket', 'object_name.txt').get(Range='bytes=0-3')
+
+# Read byte 5 to 8 of an object
+response = s3.Object('metadata-bucket', 'object_name.txt').get(Range='bytes=4-7')
+
+# Read the last 4 bytes an object
+response = s3.Object('metadata-bucket', 'object_name.txt').get(Range='bytes=-4')
+```
+
 Generate a pre-signed URL (only possible via client, not directly via Object object):
 ```python
 url = client.generate_presigned_url('get_object', 
